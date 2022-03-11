@@ -1,15 +1,17 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class ArrayTest {
     public static void main(String[] args) {
-         Mytools mytools=new Mytools();
-         int[] arr={9, 5, 6, 8, 2, 7, 3, 4, 1};
-         mytools.bubble(arr);
+        Mytools mytools = new Mytools();
+        int[] arr = {9, 5, 6, 8, 2, 7, 3, 4, 1};
+        mytools.bubble(arr);
         for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]+"\t");
+            System.out.print(arr[i] + "\t");
         }
     }
 }
+
 class Mytools {
     public void bubble(int arr[]) {
         //冒泡排序
@@ -21,6 +23,7 @@ class Mytools {
                     temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
+
                 }
             }
         }
